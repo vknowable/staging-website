@@ -79,9 +79,9 @@
 
   --custom-dark-color: #050707;
   --custom-dark-color-rgb: 05, 07, 07;
-  --custom-light-color: #f2f4f3;
+  --custom-light-color: #d5d5d5;
   --custom-light-color-rgb: 242, 244, 243;
-  --custom-accent-color: #7180b9;
+  --custom-accent-color: #5f6b97;
   --custom-accent-color-rgb: 113, 128, 185;
 }
 
@@ -103,7 +103,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--custom-color-dark);
+  color: #f0f0f0;
   text-align: var(--bs-body-text-align);
   background-color: white;
   -webkit-text-size-adjust: 100%;
@@ -127,7 +127,8 @@ body {
 }
 
 .custom-text-light {
-  color: #65635D;
+  color: #4a4a4a;
+  font-weight: bold;
 }
 
 hr {
@@ -11580,7 +11581,7 @@ body {
     color: var(--custom-light-color);
   }
   #mainNav.navbar-shrink {
-    background-color: var(--custom-light-color);
+    background-color: #cbbda4;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: var(--custom-dark-color);

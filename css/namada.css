@@ -105,7 +105,7 @@ p:last-child {
   left: 8px;
   margin-left: -14px;
   flex-grow: 1;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 .header-utility {
   margin-bottom: 0;
@@ -133,7 +133,7 @@ p:last-child {
 .section-head {
   justify-content: flex-start;
   align-items: baseline;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .space-around {
   justify-content: space-around;
@@ -166,7 +166,7 @@ p:last-child {
   .master-container {
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .menu-container {
     width: 305px;
@@ -340,7 +340,7 @@ p:last-child {
   transition: all 0.1s ease-in-out;
 }
 .link-yellow:hover {
-  color: #f76c53;
+  color: #f55033;
   transition: all 0.1s ease-in-out;
 }
 
@@ -351,7 +351,7 @@ p:last-child {
   flex-direction: column;
   align-items: center;
   /*background: linear-gradient(rgba(29, 30, 34 0.5), rgba(29, 30, 34 0.5) 55%), url(../assets/splash-sm.png);*/
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55) 35%), url(../assets/splash.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45) 35%), url(../assets/splash.jpg);
   background-size: 130vw;
   background-position: 55%;
   background-repeat: no-repeat;
@@ -436,7 +436,7 @@ p:last-child {
 /*instead, team-section-sm/lg is cleaner? */
 /*better? just duplicate/hide the summary text*/
 .team-box {
-  background: #202126;
+  background: #17181b;
   border-radius: 5px;
   border: 1px solid #8b6823;
   margin-top: 35px;
@@ -465,7 +465,7 @@ p:last-child {
   position: relative;
   top: -4px;
   transition: all 0.1s ease-out;
-  border: 2px solid #202126;
+  border: 2px solid #17181b;
 }
 .portrait:active {
   top: -4px;
@@ -517,7 +517,7 @@ h6 { /*Team names*/
   visibility: hidden;
   position: fixed;
   border: 2px solid #2d333b;
-  background: #202126;
+  background: #17181b;
   color: #cacaca;
   font-size: 0.875em;
   border-radius: 5px;
@@ -565,12 +565,12 @@ h6 { /*Team names*/
     margin-bottom: 40px;
     padding-top: 14px;
     padding-bottom: 14px;
-    background: #202126;
+    background: #17181b;
     border-radius: 5px;
     border: 2px solid #8b6823;
     width: 110%;
     max-width: 628px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
+    /box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
   }
   .team-summary-sm {
     display: none;
@@ -597,7 +597,11 @@ h6 { /*Team names*/
 
 .essentials {
   width: 100%;
-  margin-top: 35px;
+  padding-top: 85px;
+}
+.essentials-status {
+  margin-top: -10px;
+  margin-bottom: 35px;
 }
 .es-box {
   display: flex;
@@ -605,7 +609,7 @@ h6 { /*Team names*/
   align-items: center;
   border: 2px solid #2d333b;
   border-radius: 5px;
-  background: #202126;
+  background: #17181b;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -623,13 +627,13 @@ h6 { /*Team names*/
   margin: 0;
 }
 .token-name {
-  color: #f76c53;
+  color: #f55033;
 }
 @media only screen and (min-width: 1101px) {
   .es-box {
     border: 2px solid #2d333b;
     border-radius: 5px;
-    background: #202126;
+    background: #17181b;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   }
@@ -658,10 +662,14 @@ h6 { /*Team names*/
 }
 .helpful-li {
   /*background: linear-gradient(rgba(20, 234, 214, 0.3) 80%, rgba(23, 243, 226, 0.25));*/
+  /*
   border: 1px solid #6e6f72;
   border-radius: 5px;
   background: rgba(8, 85, 77, 0.6);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  */
+
+  border-bottom: 1px solid #444;
   width: 100%;
   max-width: 350px;
   height: 42px;
@@ -730,17 +738,17 @@ h6 { /*Team names*/
 
 .exciting {
   width: 100%;
-  margin-top: 75px;
+  padding-top: 125px;
 }
 .earn {
-  color: #f76c53;
+  color: #f55033;
   text-align: center;
 }
 @media only screen and (min-width: 1101px) {
   .exciting-box {
     border: 2px solid #2d333b;
     border-radius: 5px;
-    background: #202126;
+    background: #17181b;
     padding: 15px 35px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   }
@@ -748,17 +756,17 @@ h6 { /*Team names*/
 
 .commitment {
   width: 100%;
-  margin-top: 75px;
+  padding-top: 125px;
 }
 .commitment-box {
   width: 110%;
   border: 2px solid #2d333b;
   border-radius: 5px;
-  background: #202126;
+  background: #17181b;
   padding: 10px 20px;
   width: 425px;
   height: 178px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   z-index: 3;
 }
 .commitment-list {
@@ -775,7 +783,7 @@ h6 { /*Team names*/
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   mix-blend-mode: lighten;
-  opacity: 0.4;
+  opacity: 0.8;
   object-fit: cover;
   object-position: center;
   /*may need to edit image directly for opacity*/
@@ -785,11 +793,11 @@ h6 { /*Team names*/
   .commitment-box {
     border: 2px solid #2d333b;
     border-radius: 5px;
-    background: #202126;
+    background: #17181b;
     padding: 10px 20px;
     width: 425px;
     height: 178px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     z-index: 3;
   }
   .commitment-box p {
@@ -804,32 +812,32 @@ h6 { /*Team names*/
 
 .blog {
   width: 100%;
-  margin-top: 75px;
+  padding-top: 105px;
 }
 .article-card {
-  background: #202126;
+  background: #17181b;
   border-radius: 5px;
-  border: 2px solid #2d333b;
-  width: 100%;
-  max-width: 324px;
-  height: 144px;
-  padding: 8px;
+  border: 2px solid #555;
+  width: 440px;
+  height: auto;
+  padding: 15px 6px 6px 0;
   justify-content: center;
   align-items: center;
 }
 .article-image {
-  height: 128px;
-  width: 128px;
+  height: 200px;
+  width: 150px;
   border-radius: 5px 0 0 5px;
-  object-fit: fill;
-  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+  padding-right: 10px;
 }
 .article-title-box {
-  min-height: 48px;
-  width: 176px;
+  height: 70px;
+  width: 250px;
   padding-left: 8px;
-  background: #582f27;
-  justify-content: center;
+  /*background: #a42812;*/
+  text-align: left;
+  justify-content: flex-start;
   align-items: flex-start;
   border-bottom: none;
   border-radius: 0 5px 0 0;
@@ -838,21 +846,23 @@ h6 { /*Team names*/
   margin: 0;
   font-weight: 600;
   font-size: 1em;
-  color: #eff2f7;
+  color: #1bbea9;
 }
 .article-date {
   margin: 0;
+  margin-top: 8px;
   font-size: 0.75em;
   color: #CACACA;
   font-style: italic;
 }
 .article-desc-box {
-  height: 76px;
-  width: 176px;
-  background: #324348;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 16px;
+  height: 140px;
+  width: 250px;
+  /*background: #324348;*/
+  border-top: 1px solid #555;
+  padding: 8px;
+  padding-top: 10px;
+  padding-bottom: 0;
   border-radius: 0 0 5px 0;
 }
 .article-desc {
@@ -877,11 +887,11 @@ h6 { /*Team names*/
   transition: all 0.1s ease-out;
   /*border: 2px solid #606060;
   border-radius: 5px;*/
-  background: #2d333b;
-  border: 2px solid #5b6778;
+  background: #202126;
+  border: 2px solid #2c2e34;
 }
 .article-card:active {
-  background: #2d333b;
+  background: #202126;
   border: 2px solid #5b6778;
 }
 @media only screen and (min-width: 1101px) {
@@ -896,28 +906,22 @@ h6 { /*Team names*/
   }
   */
   .article-card {
-    width: 432px;
-    max-width: 432px;
-    height: 190px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   }
   .article-image {
-    width: 174px;
-    height: 168px;
+
   }
   .article-desc-box {
-    width: 234px;
-    height: 102px;
+
   }
   .article-title-box {
-    width: 234px;
-    min-height: 62px;
+
   }
 }
 
 .further-reading {
   width: 100%;
-  margin-top: 75px;
+  padding-top: 105px;
 }
 .topic {
   color: #CACACA;
