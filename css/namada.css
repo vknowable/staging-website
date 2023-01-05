@@ -443,12 +443,17 @@ p:last-child {
   background: #17181b;
   border-radius: 5px;
   border: 1px solid #8b6823;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
   width: 110%;
   max-width: 628px;
+}
+.team-box h3 a {
+  color: #34beb1;
+  font-style: italic;
+  margin-left: 0.45rem;
 }
 .portrait {
   width: 75px;
@@ -464,6 +469,7 @@ p:last-child {
   -ms-user-select: none;
   user-select: none;
   transition: all 0.1s ease-in-out;
+  margin-bottom: 0.25rem;
 }
 .portrait:hover {
   position: relative;
@@ -477,18 +483,24 @@ p:last-child {
 }
 .portrait-container {
   width: 100%;
+  margin-top: 0.75rem;
 }
 .portrait-card {
   margin-top: 20px;
   width: 110px;
 }
 .team-divider {
-  display: none;
+  width: 2px;
+  height: 90px;
+  background: rgba(202, 202, 202, 0.1);
+  display: inline;
+  align-self: center;
 }
 .more-info {
   font-size: 0.75em;
   font-style: italic;
   color: #CACACA;
+  margin-top: 0.5rem;
 }
 .team-summary-lg {
   display: none;
@@ -565,16 +577,15 @@ h6 { /*Team names*/
   }
   .team-box {
     display: flex;
-    margin-top: 40px;
+    margin-top: 55px;
     margin-bottom: 40px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding: 2rem;
     background: #17181b;
     border-radius: 5px;
     border: 2px solid #8b6823;
     width: 110%;
     max-width: 628px;
-    /box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+    /*box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);*/
   }
   .team-summary-sm {
     display: none;
@@ -594,9 +605,6 @@ h6 { /*Team names*/
     width: 90px;
     height: 90px;
   }
-  .h6 {
-    font-size: 0.875em;
-  }
 }
 
 .essentials {
@@ -605,19 +613,19 @@ h6 { /*Team names*/
 }
 .essentials-status {
   margin-top: -10px;
-  margin-bottom: 35px;
 }
 .es-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #2d333b;
+  border: 1px solid #8b6823;
   border-radius: 5px;
   background: #17181b;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 2.5rem;
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);*/
 }
 .es-image {
+  display: none;
   width: 15vw;
   max-width: 110px;
   height: auto;
@@ -626,6 +634,7 @@ h6 { /*Team names*/
 }
 .es-container {
   justify-content: space-around;
+  margin-top: 55px;
 }
 .native-token {
   margin: 0;
@@ -633,15 +642,22 @@ h6 { /*Team names*/
 .token-name {
   color: #f55033;
 }
+.es-list {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #444;
+  text-indent: -20px;
+}
 @media only screen and (min-width: 1101px) {
   .es-box {
-    border: 2px solid #2d333b;
+    border: 2px solid #8b6823;
     border-radius: 5px;
     background: #17181b;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 2.5rem;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);*/
   }
   .es-image {
+    display: inline;
     height: 125px;
     width: auto;
   }
@@ -656,6 +672,7 @@ h6 { /*Team names*/
 .helpful-title {
   font-size: 1.25em;
   color: #eff2f7;
+  margin-bottom: 1.25rem;
 }
 .helpful-list {
   list-style: none;
@@ -747,13 +764,14 @@ h6 { /*Team names*/
 .earn {
   color: #f55033;
   text-align: center;
+  margin-bottom: 2rem;
 }
 @media only screen and (min-width: 1101px) {
   .exciting-box {
-    border: 2px solid #2d333b;
+    border: 2px solid #8b6823;
     border-radius: 5px;
     background: #17181b;
-    padding: 15px 35px;
+    padding: 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   }
 }
