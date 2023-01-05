@@ -161,19 +161,23 @@ p:last-child {
 .content-container {
   width: 83.3%;
   max-width: 500px;
+
 }
 @media only screen and (min-width: 1101px) {
   .master-container {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
+
   }
   .menu-container {
     width: 305px;
     display: inline;
+    margin-left: 20px;
   }
   .content-container {
     max-width: 628px;
+    margin-right: 6vw;
   }
 }
 @media only screen and (min-width: 1401px) {
