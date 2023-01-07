@@ -34,8 +34,8 @@ body {
   font-size: 15px;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
-  line-height: 125%;
-  letter-spacing: 0.35px;
+  line-height: 140%;
+  letter-spacing: 0.4px;
   text-align: justify;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -65,18 +65,19 @@ a:hover {
 
 h2 {
   color: #f8b940;
-  font-size: 1.25em;
-  font-family: 'Bitter', 'Inter', sans-serif;
+  font-size: 1.4rem;
+  /*font-family: 'Bitter', 'Inter', sans-serif;*/
+  font-family: 'Inter', sans-serif;
   /*margin-top: 20px;*/
   margin-bottom: 16px;
   position: relative;
   left: -10px;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  /*text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);*/
 }
 
 
 p {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 p:last-child {
   margin-bottom: 0;
@@ -90,7 +91,8 @@ p:last-child {
 }
 .bullet-list {
   list-style-position: inside;
-  padding-left: 8px;
+  padding-left: 1rem;
+  margin: 0 1rem;
   text-align: left;
 }
 .bullet-reducer {
@@ -105,7 +107,7 @@ p:last-child {
   left: 8px;
   margin-left: -14px;
   flex-grow: 1;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);*/
 }
 .header-utility {
   margin-bottom: 0;
@@ -133,7 +135,7 @@ p:last-child {
 .section-head {
   justify-content: flex-start;
   align-items: baseline;
-  margin-bottom: 30px;
+  margin-bottom: 2.5rem;
 }
 .space-around {
   justify-content: space-around;
@@ -184,6 +186,13 @@ p:last-child {
   .master-container {
     padding: 0 6vw;
   }
+}
+
+.orange {
+  color: #f55033;
+}
+.dark-grey {
+  color: #AAA;
 }
 
 .bg-gradient {
@@ -452,7 +461,6 @@ p:last-child {
 }
 .team-box h3 a {
   color: #34beb1;
-  font-style: italic;
   margin-left: 0.45rem;
 }
 .portrait {
@@ -483,30 +491,29 @@ p:last-child {
 }
 .portrait-container {
   width: 100%;
-  margin-top: 0.75rem;
+  margin-top: 1.25rem;
 }
 .portrait-card {
   margin-top: 20px;
   width: 110px;
 }
 .team-divider {
-  width: 2px;
+  width: 1px;
   height: 90px;
-  background: rgba(202, 202, 202, 0.1);
+  background: #444;
   display: inline;
   align-self: center;
 }
 .more-info {
   font-size: 0.75em;
   font-style: italic;
-  color: #CACACA;
-  margin-top: 0.5rem;
+  color: #AAA;
+  margin-top: 1rem;
 }
 .team-summary-lg {
   display: none;
 }
 h3 { /*"Founding Team"*/
-  color: #CACACA;
   text-align: center;
   font-size: 1.25em;
   font-weight: 600;
@@ -518,6 +525,9 @@ h6 { /*Team names*/
   margin-top: 4px;
   letter-spacing: 0.25px;
 }
+.handle {
+  margin-top: 0.2rem;
+}
 .blur {
   visibility: hidden;
   position: fixed;
@@ -526,36 +536,8 @@ h6 { /*Team names*/
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(2px);
-}
-.popup-text {
-  visibility: hidden;
-  position: fixed;
-  border: 2px solid #2d333b;
-  background: #17181b;
-  color: #cacaca;
-  font-size: 0.875em;
-  border-radius: 5px;
-  padding: 12px;
-  padding-left: 16px;
-  z-index: 50;
-  width: 350px;
-  float: left;
-  left: 50%;
-  top: 75%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.popup-text p {
-  color: #f8b940;
-  font-size: 1.1em;
-}
-.popup-text ul {
-  list-style-position: outside;
+  background-color: rgba(100, 100, 100, 0.1);
+  /*backdrop-filter: blur(1px);*/
 }
 .show {
   visibility: visible;
@@ -571,10 +553,6 @@ h6 { /*Team names*/
   to {opacity:1 ;}
 }
 @media only screen and (min-width: 1101px) {
-  .popup-text {
-    left: 69vw;
-    top: 45%;
-  }
   .team-box {
     display: flex;
     margin-top: 55px;
@@ -706,7 +684,7 @@ h6 { /*Team names*/
   top: -2px;
   height: 46px;
   font-weight: bold;
-  border: 1px solid #8b6823;
+  border-bottom: 1px solid #8b6823;
 }
 .helpful-li:active {
   transition: all 0.1s ease-out;
@@ -716,7 +694,7 @@ h6 { /*Team names*/
   border: 1px solid #8b6823;
 }
 .helpful-item {
-  color: #eff2f7;
+  color: #AAA;
   letter-spacing: 1.2px;
   width: 100%;
   height: 100%;
@@ -764,14 +742,14 @@ h6 { /*Team names*/
 .earn {
   color: #f55033;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 @media only screen and (min-width: 1101px) {
   .exciting-box {
     border: 2px solid #8b6823;
     border-radius: 5px;
     background: #17181b;
-    padding: 2rem;
+    padding: 2.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   }
 }
@@ -781,22 +759,96 @@ h6 { /*Team names*/
   padding-top: 125px;
 }
 .commitment-box {
-  width: 110%;
-  border: 2px solid #2d333b;
+  border: 1px solid #8b6823;
   border-radius: 5px;
   background: #17181b;
-  padding: 10px 20px;
-  width: 425px;
-  height: 178px;
+  padding: 2.5rem;
+  height: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   z-index: 3;
 }
+/*dropdown effect*/
+/*Style for the first level menu bar*/
+.commitment-item {
+  width:100%;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  border-top: 1px solid #444;
+  list-style-type:none;
+}
+
+label{
+  position:relative;
+  display:block;
+  cursor:pointer;
+  padding-right: 2.5rem;
+}
+
+label:after{
+  content:"";
+  position:absolute;
+  display:block;
+  top:50%;
+  right:5px;
+  width:0;
+  height:0;
+  border-top:4px solid rgba(255,255,255,.5);
+  border-bottom:0 solid rgba(255,255,255,.5);
+  border-left:4px solid transparent;
+  border-right:4px solid transparent;
+  transition:border-bottom .1s, border-top .1s .1s;
+  }
+
+label:hover,
+input:checked ~ label {color: #14ead6;}
+
+input:checked ~ label:after{
+  border-top:0 solid rgba(255,255,255,.5);
+  border-bottom:4px solid rgba(255,255,255,.5);
+  transition:border-top .1s, border-bottom .1s .1s;
+}
+
+/*hide the inputs*/
+input{display:none}
+
+/*show the second levele menu of the selected voice*/
+input:checked ~ .submenu{
+  max-height:500px;
+  transition:max-height 0.5s ease-in;
+}
+
+/*style for the second level menu*/
+.submenu{
+  max-height:0;
+  overflow:hidden;
+  text-indent: 0px;
+  margin-left: 28px;
+  margin-top: 0.25rem;
+  list-style-type: circle;
+  transition:max-height 0.35s ease-out;
+}
+.submenu li {
+  color: #AAA;
+  margin-top: 0.5rem;
+  display: list-item;
+}
+/*end dropdown*/
+
 .commitment-list {
   width: 91.4%;
   padding-left: 28px;
   text-indent: -20px;
   z-index: 6;
   color: #eff2f7;
+}
+.commitment-list-l2 {
+  text-indent: 0px;
+  list-style-position: outside;
+  list-style-type: circle;
+  margin-left: 28px;
+  margin-top: 0.25rem;
+  color: #AAA;
 }
 .commitment-image {
   width: 330px;
@@ -813,13 +865,8 @@ h6 { /*Team names*/
 }
 @media only screen and (min-width: 1101px) {
   .commitment-box {
-    border: 2px solid #2d333b;
+    border: 2px solid #8b6823;
     border-radius: 5px;
-    background: #17181b;
-    padding: 10px 20px;
-    width: 425px;
-    height: 178px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     z-index: 3;
   }
   .commitment-box p {
@@ -836,7 +883,49 @@ h6 { /*Team names*/
   width: 100%;
   padding-top: 105px;
 }
+.blog-right {
+  padding-left: 2rem;
+  flex-basis: 2;
+}
+.blog-image {
+  width: 25%;
+  height: auto;
+  filter: saturate(75%);
+  flex-basis: 1;
+}
+.blog-card {
+  padding: 2rem;
+  transition: all 0.1s ease-out;
+}
+.blog-title {
+  font-size: 1.25rem;
+  color: #eff2f7;
+  margin: 0;
+}
+.blog-description {
+  color: #eff2f7;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+.blog-date {
+  color: #AAA;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+.blog-card:hover {
+  transition: all 0.1s ease-out;
+  position: relative;
+  top: 10px;
+  border-top: 1px solid #34beb1;
+  border-bottom: 1px solid #34beb1;
+  /*background: rgba(10,10,10,0.1);*/
+}
+.blog-card:hover .blog-title {
+  font-size: 1.3rem;
+}
+
 .article-card {
+  margin-top: 5rem;
   background: #17181b;
   border-radius: 5px;
   border: 2px solid #555;
@@ -874,7 +963,7 @@ h6 { /*Team names*/
   margin: 0;
   margin-top: 8px;
   font-size: 0.75em;
-  color: #CACACA;
+  color: #AAA;
   font-style: italic;
 }
 .article-desc-box {
@@ -946,9 +1035,24 @@ h6 { /*Team names*/
   padding-top: 105px;
 }
 .topic {
-  color: #CACACA;
-  font-size: 1.25em;
+  color: #f55033;
+  font-size: 1.25rem;
   margin: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.further-detail {
+  color: #AAA;
+}
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  border-top: 1px solid #444;
+  padding: 1rem 2rem;
 }
 
 .footer {
@@ -959,10 +1063,10 @@ h6 { /*Team names*/
   background: rgba(248, 185, 64, 0.03);
   justify-content: space-between;
   align-items: center;
-  color: #CACACA;
+  color: #AAA;
 }
 .footer h5 {
-  color: #CACACA;
+  color: #AAA;
   font-size: 1.25em;
   margin-bottom: 5px;
   transition: all 0.25s ease-out;

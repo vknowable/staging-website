@@ -64,22 +64,25 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 */
 
+
     //popup bios
     let bioShow = false;
     document.addEventListener('click', function(e) {
       if (bioShow === true) {
-        const bios = Array.from(document.getElementsByClassName("popup-text"));
+        const bios = Array.from(document.getElementsByClassName("Tooltip-Tip"));
         bios.forEach(bio => {
-          bio.classList.remove('show');
+          bio.classList.add('tooltip-hide');
         })
-        document.getElementById("blur").classList.remove('show');
+        //document.getElementById("blur").classList.remove('show');
         bioShow = false;
       }
-      const clicked = e.target.id.split("-");
-      if(clicked[1] === 'pic') {
-        document.getElementById("blur").classList.add("show");
-        document.getElementById(clicked[0] + "-bio").classList.toggle("show");
-        bioShow = true;
+      else {
+        const clicked = e.target.id.split("-");
+        if(clicked[1] === 'pic') {
+          //document.getElementById("blur").classList.add("show");
+          document.getElementById(clicked[0] + "-bio").classList.toggle("tooltip-hide");
+          bioShow = true;
+        }
       }
     }, false);
 

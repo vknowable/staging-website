@@ -21,6 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Inter:wght@300;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/favicon.png"/>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link href="css/tooltip.css" rel="stylesheet" />
   <link href="css/namada.css" rel="stylesheet" />
 </head>
 
@@ -103,28 +104,6 @@
                 Explorer
               </a>
             </li>
-            <!--
-            <li class="helpful-li">
-              <a href="#" class="helpful-item">
-                Staking Tool
-              </a>
-            </li>
-            <li class="helpful-li">
-              <a href="#" class="helpful-item">
-                Staking Guide
-              </a>
-            </li>
-            <li class="helpful-li">
-              <a href="#" class="helpful-item">
-                Economic Model
-              </a>
-            </li>
-            <li class="helpful-li">
-              <a href="#" class="helpful-item">
-                Governance Guide
-              </a>
-            </li>
-          -->
             <li class="helpful-li">
               <a href="https://docs.namada.net/index.html" target="_blank" rel="noopener noreferrer" class="helpful-item">
                 Documentation
@@ -156,45 +135,45 @@
             <div class="flex-column team-box">
               <h3>Founding Team: <a href="https://heliax.dev/" target="_blank" rel="noopener noreferrer">Heliax</a></h3>
               <div class="flex-row space-around portrait-container">
-                <div class="portrait-card flex-column">
+                <div class="portrait-card flex-column Tooltip-Wrapper">
                   <img src="./assets/chris.webp" class="portrait" id="chris-pic">
                   <h6>Christopher Goes</h6>
-                  <span class="popup-text" id="chris-bio">
-                    <p class="text-italic text-bold">@cwgoes</p>
-                    <ul class="bullet-list">
+                  <a href="#" class="link-yellow handle text-italic">@cwgoes</a>
+                  <div class="Tooltip-Tip tooltip-hide bottom tooltip-format" id="chris-bio">
+                    <ul class="bullet-list commitment-list">
                       <li>Author & lead of the IBC protocol</li>
                       <li>Early Cosmos core developer & protocol architect</li>
                       <li>Wyvern DEX founder (settles all OpenSea trades)</li>
                     </ul>
-                  </span>
+                  </div>
                 </div>
                 <div class="team-divider"></div>
-                <div class="portrait-card flex-column">
+                <div class="portrait-card flex-column Tooltip-Wrapper">
                   <img src="./assets/awa.webp" class="portrait" id="awa-pic" style="filter: grayscale(50%);">
                   <h6>Awa Sun Yin</h6>
-                  <span class="popup-text" id="awa-bio">
-                    <p class="text-italic text-bold">@awasunyin</p>
-                    <ul class="bullet-list">
+                  <a href="#" class="link-yellow handle text-italic">@awasunyin</a>
+                  <div class="Tooltip-Tip tooltip-hide bottom tooltip-format" id="awa-bio">
+                    <ul class="bullet-list commitment-list">
                       <li>Data scientist & software engineer at Chainalysis</li>
                       <li>Researcher at Cosmos (Tendermint)</li>
                     </ul>
-                  </span>
+                  </div>
                 </div>
                 <div class="team-divider"></div>
-                <div class="portrait-card flex-column">
+                <div class="portrait-card flex-column Tooltip-Wrapper">
                   <img src="./assets/adrian.webp" class="portrait" id="adrian-pic">
                   <h6>Adrian Brink</h6>
-                  <span class="popup-text" id="adrian-bio">
-                    <p class="text-italic text-bold">@adrian_brink</p>
-                    <ul class="bullet-list">
+                  <a href="#" class="link-yellow handle text-italic">@adrian_brink</a>
+                  <div class="Tooltip-Tip tooltip-hide bottom tooltip-format" id="adrian-bio">
+                    <ul class="bullet-list commitment-list">
                       <li>Early core developer Cosmos (Tendermint)</li>
                       <li>Technologist at Web3Foundation | Polkadot</li>
                     </ul>
-                  </span>
+                  </div>
                 </div>
               </div>
               <p class="more-info text-italic">(Click portraits for more info)</p>
-              <p class="team-summary-lg">The <span class="text-italic"><a href="https://heliax.dev/" target="_blank" rel="noopener noreferrer">Heliax</a></span> founders were core Cosmos R&D, and <a href="https://arxiv.org/abs/2006.15918" target="_blank" rel="noopener noreferrer">Christopher Goes led IBC</a>. Together they shipped all major Tezos upgrades.</p>
+              <p class="team-summary-lg dark-grey">The <span class="text-italic"><a href="https://heliax.dev/" target="_blank" rel="noopener noreferrer">Heliax</a></span> founders were core Cosmos R&D, and <a href="https://arxiv.org/abs/2006.15918" target="_blank" rel="noopener noreferrer">Christopher Goes led IBC</a>. Together they shipped all major Tezos upgrades.</p>
             </div>
             <p class="team-summary-sm">The <span class="text-italic"><a href="https://heliax.dev/" target="_blank" rel="noopener noreferrer">Heliax</a></span> founders were core Cosmos R&D, and <a href="https://arxiv.org/abs/2006.15918" target="_blank" rel="noopener noreferrer">Christopher Goes led IBC</a>. Together they shipped all major Tezos upgrades.</p>
           </div>
@@ -213,16 +192,16 @@
               <div>
                 <p class="native-token text-bold">Namada token: <span class="text-italic token-name">NAM</span></p>
                 <ul class="bullet-list es-list">
-                  <li><span class="bullet-reducer">Markets: <span class="text-italic"><a href="#essentials">Not in circulation</a></span></span></li>
-                  <li><span class="bullet-reducer">Earning: <span class="text-italic">--</span></span></li>
-                  <li><span class="bullet-reducer">Inflation: <span class="text-italic">--</span></span></li>
+                  <li><span>Markets: <span class="text-italic dark-grey">Not in circulation</span></span></li>
+                  <li><span>Earning: <span class="text-italic dark-grey">--</span></span></li>
+                  <li><span>Inflation: <span class="text-italic dark-grey">--</span></span></li>
                 </ul>
                 <ul class="bullet-list es-list">
-                  <li><span class="bullet-reducer">Earning: <span class="text-italic"><a href="#essentials">Not in circulation</a></span></span></li>
-                  <li><span class="bullet-reducer">Slashing: <span class="text-italic">--</span></span></li>
-                  <li><span class="bullet-reducer">Unbond Time: <span class="text-italic">--</span></span></li>
-                  <li><span class="bullet-reducer">Rewards are staked; auto-compound & not liquid</span></li>
-                  <li><span class="bullet-reducer">Slashing penalty is exponential, read here</span></li>
+                  <li><span>Earning: <span class="text-italic dark-grey">Not in circulation</span></span></li>
+                  <li><span>Slashing: <span class="text-italic dark-grey">--</span></span></li>
+                  <li><span>Unbond Time: <span class="text-italic dark-grey">--</span></span></li>
+                  <li><span>Rewards are staked <span class="text-italic dark-grey">(auto-compound & not liquid)</span></span></li>
+                  <li><span>Slashing penalty is exponential — <a href="#">read here</a></span></li>
                 </ul>
               </div>
             </div>
@@ -252,29 +231,6 @@
             <a href="https://namada.explorers.guru/validators" target="_blank" rel="noopener noreferrer" class="helpful-item">
               Explorer
             </a>
-            <!--
-          </li>
-          <li class="helpful-li">
-            <a href="#" class="helpful-item">
-              Staking Tool
-            </a>
-          </li>
-          <li class="helpful-li">
-            <a href="#" class="helpful-item">
-              Staking Guide
-            </a>
-          </li>
-          <li class="helpful-li">
-            <a href="#" class="helpful-item">
-              Economic Model
-            </a>
-          </li>
-          <li class="helpful-li">
-            <a href="#" class="helpful-item">
-              Governance Guide
-            </a>
-          </li>
-        -->
           <li class="helpful-li">
             <a href="https://docs.namada.net/index.html" target="_blank" rel="noopener noreferrer" class="helpful-item">
               Documentation
@@ -322,34 +278,43 @@
             <div class="flex-column">
               <div class="commitment-box flex-column">
                 <p class="" style="font-weight:500;">We’re committed to <span style="color: #f55033;">Namada</span> and our community through the following initiatives:</p>
-                <ul class="bullet-list commitment-list">
-                  <!--
-                  <li><span class="bullet-reducer">Securing the network as a genesis validator.</span></li>
-                  <li><span class="bullet-reducer">Offering reliable staking services.</span></li>
-                  <li><span class="bullet-reducer">Actively participating in governance.</span></li>
-                  <li><span class="bullet-reducer">Community outreach.</span></li>
-                -->
-                <li>
-                  <span class="bullet-reducer">We’re helping the core team</span>
-                  <ul>
-                    <li><span class="bullet-reducer">Infrastructure support & testing</span></li>
-                    <li><span class="bullet-reducer">Validator recruiting</span></li>
-                    <li><span class="bullet-reducer">RPGF nomination efforts</span></li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="bullet-reducer">We’re running & advocating for local bare metal validators</span>
-                  <ul>
-                    <li><span class="bullet-reducer">Local bare metal infrastructure; bare metal advocacy & education</span></li>
-                    <li><span class="bullet-reducer">Staking services & education</span></li>
-                    <li><span class="bullet-reducer">Governance participation, education & advocacy</span></li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="bullet-reducer">We’re keeping you informed with Namada Knowledge Hub alerts</span>
-                </li>
+
+                <ul class="commitment-item">
+                  <li>
+                    <input id="check01" type="checkbox" name="menu"/>
+                    <label for="check01">We’re helping the core team</label>
+                    <ul class="submenu">
+                      <li>Infrastructure support & testing.</li>
+                      <li>Validator recruiting.</li>
+                      <li>RPGF nomination efforts.</li>
+                    </ul>
+                  </li>
                 </ul>
-                <p>[sentence for call to action to join our efforts and also to delegate NAM]</p>
+
+                <ul class="commitment-item">
+                  <li>
+                    <input id="check02" type="checkbox" name="menu"/>
+                    <label for="check02">We’re running & advocating for local bare metal validators.</label>
+                    <ul class="submenu">
+                      <li>Local bare metal infrastructure; bare metal advocacy & education.</li>
+                      <li>Staking services & education.</li>
+                      <li>Governance participation, education & advocac.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <ul class="commitment-item">
+                  <li>
+                    <input id="check03" type="checkbox" name="menu"/>
+                    <label for="check03">We’re keeping you informed with Namada Knowledge Hub alerts</label>
+                    <ul class="submenu">
+                      <li>Stay up to date on launch progress, token news & more.</li>
+                      <li>Sign up <a href="#">here!</a>.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <p style="margin-top: 3.5rem; color: #f8b940; text-align: center;">[sentence for call to action to join our efforts and also to delegate NAM]</p>
               </div>
               <img class="commitment-image" src="./assets/commitment.jpg">
             </div>
@@ -364,26 +329,18 @@
           </div>
           <div class="flex-column blog-box">
 
-            <!--Article card-->
-            <a href="#blog" class="article-link">
-              <div class="article-card flex-row">
-                <div class="flex-row" style="gap: 4px;">
-                    <img src="./assets/article1.jpg" class="article-image">
-                  <div>
-                    <div class="flex-column space-between" style="gap: 4px;">
-                      <div class="article-title-box flex-column">
-                        <p class="article-title">Data Security in a Digital Society</p>
-                        <p class="article-date">6 January, 2023</p>
-                      </div>
-                      <div class="article-desc-box">
-                        <p class="article-desc">We’re rapidly moving from a material society to a busy, digital metropolis, with Web3 promising us digital ownership–but who wants to live in a busy metropolis without curtains?</p>
-                      </div>
-                    </div>
+            <!--Article-->
+              <a href="#" class="blog-card">
+                <div class="flex-row">
+                  <img src="./assets/article1.jpg" class="blog-image">
+                  <div class="blog-right">
+                    <p class="blog-title text-bold">Data Security in a Digital Society</p>
+                    <p class="blog-date text-italic">6 January, 2023</p>
+                    <p class="blog-description">We’re rapidly moving from a material society to a busy, digital metropolis, with Web3 promising us digital ownership–but who wants to live in a busy metropolis without curtains?</p>
                   </div>
                 </div>
-              </div>
-            </a>
-            <!--End article-->
+              </a>
+            <!--end article-->
 
           </div>
         </div>
@@ -395,20 +352,28 @@
             <h2>Further Reading</h2><div class="yellow-rule" ></div>
           </div>
           <div>
-            <p class="topic text-bold">Web3 needs asset privacy</p>
-            <p>Everything we do in Web3 is exposed to everyone–imagine if everyone in the world could see your credit card purchases and bank statements. Even if your address isn’t publicly known, it’s only a matter of time before all of your assets and transactions are exposed. Namada will be a blockchain that offers interchain asset privacy, and Namada’s user-friendly interfaces will make privacy-preserving transfers more accessible. Heliax cofounder Christopher Goes led the Inter-Blockchain Communication protocol, IBC; a key innovation and open standard for secure cross-chain communication. Now that we can connect many blockchains together, Namada is the first step towards a cross-chain and privacy-securing Web3.</p>
+            <p class="topic text-bold">— Web3 needs asset privacy —</p>
+            <p>Everything we do in Web3 is exposed to everyone — imagine if everyone in the world could see your credit card purchases and bank statements. Even if your address isn’t publicly known, it’s only a matter of time before all of your assets and transactions are exposed.</p>
+            <p><span class="text-bold">Namada will be a blockchain that offers interchain asset privacy</span>, and Namada’s user-friendly interfaces will make privacy-preserving transfers more accessible.</p>
+            <p>Heliax cofounder Christopher Goes led the Inter-Blockchain Communication protocol, IBC; a key innovation and open standard for secure cross-chain communication. Now that we can connect many blockchains together, Namada is the first step towards a cross-chain and privacy-securing Web3.</p>
             <!--
             <p class="topic text-bold">Topic 2</p>
             <p>summary text from <a href="#">key words</a> are linked to each of the articles</p>
             <p class="topic text-bold">Topic 3</p>
             <p>summary of articles we have <a href="#">written</a>, text from key words are <a href="#">linked</a> to each of the articles</p>
           -->
-            <ul>
-              <li>Introducing Namada: Interchain Asset-agnostic Privacy (May 2022 article)</li>
-              <li>The Namada Specifications lays out all Namada details (maintained by core team)</li>
-              <li>The Namada Documentation is a guide to using Namada (maintained by core team)</li>
+            <ul class="bullet-list commitment-list">
+              <li><a href="#">Introducing Namada</a>: Interchain Asset-agnostic Privacy <span class="further-detail text-italic">(May 2022 article)</span></li>
+              <li>The <a href="#">Namada Specifications</a> lays out all Namada details <span class="further-detail text-italic">(maintained by core team)</span></li>
+              <li>The <a href="#">Namada Documentation</a> is a guide to using Namada <span class="further-detail text-italic">(maintained by core team)</span></li>
             </ul>
-            <p>website; Twitter; GitHub; Reddit</p>
+            <ul class="social-list">
+              <li class="social-heading text-bold">Official Project Links:</li>
+              <li class="social-li"><a href="#" class="social">Website</a></li>
+              <li class="social-li"><a href="#" class="social">Twitter</a></li>
+              <li class="social-li"><a href="#" class="social">GitHub</a></li>
+              <li class="social-li"><a href="#" class="social">Reddit</a></li>
+            </ul>
           </div>
         </div>
       <!-- End Further Reading -->
