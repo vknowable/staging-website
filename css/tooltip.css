@@ -2,7 +2,7 @@
 :root {
   --tooltip-text-color: #eff2f7;
   --tooltip-background-color: #b43c27;
-  --tooltip-margin: 30px;
+  --tooltip-margin: 10px;
   --tooltip-arrow-size: 6px;
 }
 
@@ -22,7 +22,7 @@
   position: absolute;
   border-radius: 4px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(+65%);
   padding: 1rem 1rem;
   color: var(--tooltip-text-color);
   background: var(--tooltip-background-color);
@@ -30,10 +30,18 @@
   font-family: 'Inter', sans-serif;
   line-height: 1.35;
   z-index: 100;
-  white-space: nowrap;
+  white-space: normal;
+  width: 250px;
    height: auto;
  opacity: 1;
   transition: opacity 2s ease;
+}
+@media only screen and (min-width: 1101px) {
+.Tooltip-Tip {
+  white-space: nowrap;
+  width: auto;
+  transform: translateX(-50%);
+}
 }
 
 /* CSS border triangles */
