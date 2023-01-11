@@ -615,7 +615,7 @@ h6 { /*Team names*/
   max-width: 110px;
   height: auto;
   align-self: center;
-  opacity: 0.7;
+  opacity: 0.5;
   filter: brightness(80%);
 }
 .es-container {
@@ -1031,7 +1031,9 @@ input:checked ~ .submenu{
     display: inline;
     order: 0;
     margin-left: 0;
-    margin-right: 1rem;
+    margin-right: 2rem;
+    opacity: 0.8;
+    filter: saturate(60%);
   }
 }
 .footer {
@@ -1058,10 +1060,10 @@ input:checked ~ .submenu{
   margin-bottom: 5px;
 }
 .social-icon {
-  fill: #498f90;
+  fill: #489090;
   transition: all 0.25s ease-out;
 }
 .social-icon:hover {
-  fill: #0c7164;
+  fill: #456C6C;
   transition: all 0.25s ease-out;
 }
