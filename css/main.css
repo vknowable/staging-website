@@ -184,7 +184,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: -25px;
+  margin-top: 15px;
 }
 .title-box h1 {
   color: #FFF;
@@ -260,14 +260,29 @@ a:hover {
   line-height: 3.7rem;
 }
 .tag-box p {
+  width: 65%;
+  margin: auto;
+  text-align: center;
   color: #D6D6D6;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: var(--body-weight);
-  line-height: 2.5rem;
+  line-height:5rem;
   font-style: normal;
   font-family: var(--body-font), sans-serif;
 }
-
+.orange {
+  color: #e67618;
+}
+.blink {
+  animation-name: blink-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+@keyframes blink-animation {
+  0% { transform: translateY(0) }
+  10% { transform: translateY(-3%) scale(1.01) }
+}
 .section-head {
   color: #FFF;
   font-family: 'Raleway', sans-serif;
@@ -297,7 +312,21 @@ a:hover {
   text-align: center;
   width: 55%;
 }
-
+.m-top {
+  margin-top: 2.5rem;
+}
+.body-blink {
+  animation-name: body-animation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+@keyframes body-animation {
+  0% { color: #BBB; }
+  10% { color: #DADADA; }
+  25% { color: #BBB; }
+  100% { color: #BBB; }
+}
 .section {
   width: 100%;
   display: flex;
@@ -329,15 +358,18 @@ a:hover {
   justify-content: center;
   align-items: center;
   transition: all 0.25s ease-out;
+  position: relative;
+  top: 0;
 }
 .card:hover {
   border: 1px solid #6a6441;
   background: #0f0f0f;
-  transition: all 0.25s ease-out;
+  top: -2px;
+  transition: all 0.08s ease-out;
 }
 .card:hover .about-img {
   fill: #aa9623;
-  transition: all 0.25s ease-out;
+  transition: all 0.08s ease-out;
 }
 .card-rule {
   width: 7rem;
@@ -434,6 +466,17 @@ a:hover {
   margin-top: 9rem;
   color: #E9E9E9;
 }
+.smile {
+  animation-name: smile-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+@keyframes smile-animation {
+  0% { transform: tranlateY(0) }
+  10% { transform: translateY(-8%) scale(1.03) }
+}
+
 #social-list {
   margin-top: 4rem;
   display: flex;
@@ -452,6 +495,7 @@ a:hover {
 .social-icon:hover {
   fill: #3E6868;
   transition: all 0.25s ease-out;
+  transform: scale(1.1);
 }
 
 #footer {
