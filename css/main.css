@@ -5,9 +5,31 @@
 }
 
 :root {
-  --tag-height: 34rem;
+  --tag-height: 28rem;
   --body-font: 'Questrial';
   --body-weight: 400;
+  --body-size: 1.6rem;
+  --section-padding-y: 6rem;
+  --section-margin-y: 8rem;
+  --card-margin-y: 5rem;
+  --card-gap: 5rem;
+  --footer-margin-y: 4rem;
+}
+@media only screen and (min-width: 801px) {
+  :root {
+    --tag-height: 32rem;
+    --body-size: 1.6rem;
+    --section-padding-y: 10rem;
+    --section-margin-y: 10rem;
+    --footer-margin-y: 8rem;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  :root {
+    --card-margin-y: 8rem;
+    --card-gap: 8rem;
+    --footer-margin-y: 10rem;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,7 +45,7 @@ html {
 body {
   margin: 0;
   color: #EEE;
-  font-size: 1.6rem;
+  font-size: var(--body-size);
   font-family: var(--body-font), sans-serif;
   font-weight: var(--body-weight);
   -webkit-text-size-adjust: 100%;
@@ -44,12 +66,12 @@ body {
 }
 
 a {
-  color: #14ead6;
+  color: #21c1d4;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
 }
 a:hover {
-  color: #498f90;
+  color: #2194a2;
   transition: all 0.1s ease-in-out;
 }
 
@@ -70,11 +92,11 @@ a:hover {
   justify-content: center;
 }
 .mainNav {
-  background: #333;
+  background: #226666;
   transition: background 0.25s ease-in-out;
 }
 .navbar-shrink {
-  background: #444;
+  background: #226666;
 }
 #mainNav a {
   color: #CACACA;
@@ -114,9 +136,10 @@ a:hover {
 }
 .navbar-toggler {
   color: #CACACA;
-  font-family: 'Inter', sans-serif;
+  /*font-family: 'Inter', sans-serif;*/
   padding: 0.5rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 1.2px;
   line-height: 1;
   background-color: transparent;
   border: 1px solid #CACACA;
@@ -188,25 +211,75 @@ a:hover {
 }
 .title-box h1 {
   color: #FFF;
-  font-size: 10rem;
+  font-size: 5.5rem;
   line-height: 12rem;
   font-weight: 400;
   font-family: 'Krona One', serif;
   font-style: normal;
-  letter-spacing: 1.2rem;
+  letter-spacing: 0.0rem;
   font-variant: small-caps;
   user-select: none;
   margin-bottom: 2rem;
 }
 .title-box h2 {
   color: rgba(242, 244, 243, 0.8);
-  font-size: 2.1rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 3.8rem;
-  letter-spacing: 4px;
+  letter-spacing: 1.75px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   user-select: none;
+}
+@media only screen and (min-width: 461px) {
+  .title-box h1 {
+    font-size: 6rem;
+    letter-spacing: 0.25rem;
+  }
+  .title-box h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 501px) {
+  .title-box h1 {
+    font-size: 7.5rem;
+    letter-spacing: 0.25rem;
+  }
+  .title-box h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2.5px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .title-box h1 {
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+  }
+  .title-box h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 701px) {
+  .title-box h1 {
+    font-size: 10rem;
+    letter-spacing: 1.2rem;
+  }
+  .title-box h2 {
+    font-size: 2.1rem;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .title-box h1 {
+    font-size: 12rem;
+    letter-spacing: 1.2rem;
+  }
+  .title-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
 }
 .title-rule {
   width: 168px;
@@ -215,12 +288,49 @@ a:hover {
   margin-top: 1rem;
 }
 .hero-color {
-  width: 100%;
+  /*width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0, 1) 10%, rgba(0,0,0, 0.8) 20%, rgba(0,0,0, 0.2) 40%), url('../assets/masthead.jpg');
   background-position: 0% -50%;
   background-size: 100% calc(100vh + var(--tag-height));
+  background-repeat: no-repeat;*/
+  background-image: linear-gradient(rgba(0,0,0, 1) 5%, rgba(0,0,0, 0.3) 40%), url('../assets/masthead.jpg');
+  width: 100%;
+  height: 100vh;
   background-repeat: no-repeat;
+  background-position: 50% 190%;
+  background-size: auto calc(120vh - var(--tag-height));
+}
+@media only screen and (min-width: 601px) {
+  .hero-color {
+    background-size: auto calc(120vh - var(--tag-height));
+    background-position: 50% 210%;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .hero-color {
+    background-size: auto calc(122vh - var(--tag-height));
+    background-position: 50% 190%;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .hero-color {
+    background-position: 50% -120%;
+    background-size: auto calc(80vh + var(--tag-height));
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .hero-color {
+    background-image: linear-gradient(rgba(0,0,0, 1) 10%, rgba(0,0,0, 0.8) 40%, rgba(0,0,0, 0.3) 60%), url('../assets/masthead.jpg');
+    background-position: 50% -30%;
+    background-size: cover calc(100vh - var(--tag-height));
+  }
+}
+@media only screen and (min-width: 1801px) {
+  .hero-color {
+    background-position: 50% -30%;
+    background-size: cover;
+  }
 }
 .hero-grey {
   width: 100%;
@@ -228,11 +338,29 @@ a:hover {
   background-color: #000;
   background-image:url('../assets/masthead.jpg');
   opacity: 0.25;
-  background-position: 0 80%;
-  background-size: 100% calc(100vh + var(--tag-height));
+  /*background-position: 0 80%;
+  background-size: 100% calc(100vh + var(--tag-height));*/
+  background-size: auto 120vh;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
   filter: brightness(30%);
+}
+@media only screen and (min-width: 801px) {
+  .hero-grey {
+    background-position: 50% calc(-10% - 80vh);
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .hero-grey {
+    background-position: 50% calc(-10% - 90vh);
+  }
+}
+@media only screen and (min-width: 1601px) {
+  .hero-grey {
+    background-size: cover;
+    background-position: 50% calc(-10% - 100vh);
+  }
 }
 .float-me {
   width:100%;
@@ -260,15 +388,34 @@ a:hover {
   line-height: 3.7rem;
 }
 .tag-box p {
-  width: 65%;
+  width: 80%;
   margin: auto;
   text-align: center;
   color: #D6D6D6;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: var(--body-weight);
-  line-height:5rem;
+  line-height: 3.5rem;
   font-style: normal;
   font-family: var(--body-font), sans-serif;
+}
+@media only screen and (min-width: 601px) {
+  .tag-box p {
+    font-size: 2.4rem;
+    line-height: 4rem;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .tag-box p {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .tag-box p {
+    width: 65%;
+    max-width: 1000px;
+  }
 }
 .orange {
   color: #e67618;
@@ -281,10 +428,12 @@ a:hover {
 }
 @keyframes blink-animation {
   0% { transform: translateY(0) }
-  10% { transform: translateY(-3%) scale(1.01) }
+  10% { transform: translateY(-3%) scale(1.02); color: #E6E6E6; }
+  60% { transform: translateY(0) scale(1); color: #D6D6D6; }
 }
 .section-head {
   color: #FFF;
+  text-align: center;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -294,7 +443,8 @@ a:hover {
 }
 .section-rule {
   align-self: center;
-  width: 12rem;
+  width: 40%;
+  max-width: 200px;
   height: 1px;
   background: #96D9D9;
   margin-top: 2rem;
@@ -306,11 +456,29 @@ a:hover {
   font-family: var(--body-font), sans-serif;
   font-style: normal;
   font-weight: var(--body-weight);
-  font-size: 2rem;
-  line-height: 2.8rem;
-  letter-spacing: 1.25px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: 1.1px;
   text-align: center;
-  width: 55%;
+  width: 90%;
+}
+@media only screen and (min-width: 601px) {
+  .body-text {
+    width: 85%;
+    max-width: 1000px;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    letter-spacing: 1.1px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .body-text {
+    width: 75%;
+    max-width: 1000px;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    letter-spacing: 1.25px;
+  }
 }
 .m-top {
   margin-top: 2.5rem;
@@ -323,7 +491,7 @@ a:hover {
 }
 @keyframes body-animation {
   0% { color: #BBB; }
-  10% { color: #DADADA; }
+  10% { color: #EEE; }
   25% { color: #BBB; }
   100% { color: #BBB; }
 }
@@ -333,7 +501,8 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10rem 4rem;
+  padding: var(--section-padding-y) 4rem;
+  padding-bottom: 0;
 }
 
 #about {
@@ -342,27 +511,34 @@ a:hover {
 .card-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 8rem;
-  gap: 8rem;
+  align-items: center;
+  margin-top: var(--card-margin-y);
+  gap: var(--card-gap);
+}
+@media only screen and (min-width: 1251px) {
+  .card-container {
+    flex-direction: row;
+  }
 }
 .card {
   border: 1px solid #7a7a7a;
   background: #0d0d0d;
   border-radius: 5px;
   padding: 2rem 4rem;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  transition: all 0.25s ease-out;
+  transition: border background top 0.25s ease-out;
   position: relative;
   top: 0;
 }
 .card:hover {
-  border: 1px solid #6a6441;
+  border: 1px solid #997253;
   background: #0f0f0f;
   top: -2px;
   transition: all 0.08s ease-out;
@@ -388,7 +564,7 @@ a:hover {
   margin-top: 3rem;
 }
 .card p {
-  color: #BBB;
+  color: #C0C0C0;
   font-family: var(--body-font), sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -426,8 +602,14 @@ a:hover {
 
 }
 .team-card {
-  width: 285px;
+  width: auto;
+  max-width: 500px;
   height: auto;
+}
+@media only screen and (min-width: 1251px) {
+  .team-card {
+    max-width: 320px;
+  }
 }
 .team-img {
   width: 150px;
@@ -448,14 +630,20 @@ a:hover {
 }
 
 #contact {
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../assets/contact.jpg');
+  background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('../assets/contact.jpg');
   background-repeat: no-repeat;
   background-position: 0% 70%;
   background-size: cover;
   height: auto;
-  margin-top: 10rem;
-  padding-top: 16rem;
-  padding-bottom: 9rem;
+  margin-top: var(--section-margin-y);
+  padding-bottom: var(--section-padding-y);
+  /*padding-top: 16rem;
+  padding-bottom: 9rem;*/
+}
+@media only screen and (min-width: 1201px) {
+  #contact {
+    background-position: 0% 90%;
+  }
 }
 #contact .say-hi {
   font-size: 2rem;
@@ -474,7 +662,7 @@ a:hover {
 }
 @keyframes smile-animation {
   0% { transform: tranlateY(0) }
-  10% { transform: translateY(-8%) scale(1.03) }
+  10% { transform: translateY(-10%) scale(1.15) }
 }
 
 #social-list {
@@ -489,18 +677,18 @@ a:hover {
 .social-icon {
   /*width: 50px;
   height: 50px;*/
-  fill: #498f90;
+  fill: #f7933f;
   transition: all 0.25s ease-out;
 }
 .social-icon:hover {
-  fill: #3E6868;
+  fill: #be6d2a;
   transition: all 0.25s ease-out;
   transform: scale(1.1);
 }
 
 #footer {
-  margin-top: 16rem;
-  padding: 14rem 18rem;
+  margin-top: var(--footer-margin-y);
+  padding: 10rem 4rem;
   padding-bottom: 6rem;
   width: 100%;
   height: auto;
@@ -513,7 +701,27 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 2rem;
   align-items: flex-start;
+  margin: auto;
+}
+@media only screen and (min-width: 801px) {
+  #footer {
+    padding: 10rem 10rem;
+    padding-bottom: 6rem;
+  }
+  .footer-brand p {
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  #footer {
+    padding: 14rem 18rem;
+    padding-bottom: 6rem;
+  }
+  .footer-wrapper {
+    max-width: 1400px;
+  }
 }
 .footer-brand h5 {
   font-family: 'Raleway', sans-serif;
