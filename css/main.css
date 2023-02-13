@@ -309,8 +309,8 @@ a:hover {
 }
 @media only screen and (min-width: 801px) {
   .hero-color {
-    background-size: auto calc(122vh - var(--tag-height));
-    background-position: 50% 190%;
+    background-size: auto calc(80vh + var(--tag-height));
+    background-position: 50% -100%;
   }
 }
 @media only screen and (min-width: 1001px) {
@@ -322,7 +322,7 @@ a:hover {
 @media only screen and (min-width: 1201px) {
   .hero-color {
     background-image: linear-gradient(rgba(0,0,0, 1) 10%, rgba(0,0,0, 0.8) 40%, rgba(0,0,0, 0.3) 60%), url('../assets/masthead.jpg');
-    background-position: 50% -30%;
+    background-position: 50% -15%;
     background-size: cover calc(100vh - var(--tag-height));
   }
 }
@@ -348,12 +348,12 @@ a:hover {
 }
 @media only screen and (min-width: 801px) {
   .hero-grey {
-    background-position: 50% calc(-10% - 80vh);
+    background-position: 50% calc(-10% - 85vh);
   }
 }
 @media only screen and (min-width: 1201px) {
   .hero-grey {
-    background-position: 50% calc(-10% - 90vh);
+    background-position: 50% calc(-10% - 80vh);
   }
 }
 @media only screen and (min-width: 1601px) {
