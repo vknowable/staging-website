@@ -14,6 +14,7 @@
   --card-margin-y: 5rem;
   --card-gap: 5rem;
   --footer-margin-y: 4rem;
+  --content-max-width: 2000px;
 }
 @media only screen and (min-width: 801px) {
   :root {
@@ -187,10 +188,21 @@ a:hover {
 }
 /*end navbar classes*/
 
+#body-container {
+  width: auto;
+  max-width: var(--content-max-width);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
 #hero-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   width: 100%;
   height: calc(100vh + var(--tag-height));
   background: #000;
@@ -328,6 +340,7 @@ a:hover {
 }
 @media only screen and (min-width: 1801px) {
   .hero-color {
+    background-image: linear-gradient(rgba(0,0,0, 1) 20%, rgba(0,0,0, 0.8) 40%, rgba(0,0,0, 0.3) 60%), url('../assets/masthead.jpg');
     background-position: 50% -30%;
     background-size: cover;
   }
@@ -353,17 +366,19 @@ a:hover {
 }
 @media only screen and (min-width: 1201px) {
   .hero-grey {
-    background-position: 50% calc(-10% - 80vh);
+    background-size: cover;
+    background-position: bottom;
   }
 }
 @media only screen and (min-width: 1601px) {
   .hero-grey {
     background-size: cover;
-    background-position: 50% calc(-10% - 100vh);
+    background-position: bottom;
   }
 }
 .float-me {
   width:100%;
+  max-width: var(--content-max-width);
   height: var(--tag-height);
   position: absolute;
   top:100vh;
@@ -599,7 +614,6 @@ a:hover {
 }
 
 #team {
-
 }
 .team-card {
   width: auto;
@@ -635,6 +649,7 @@ a:hover {
   background-position: 0% 70%;
   background-size: cover;
   height: auto;
+  width: 100%;
   margin-top: var(--section-margin-y);
   padding-bottom: var(--section-padding-y);
   /*padding-top: 16rem;
